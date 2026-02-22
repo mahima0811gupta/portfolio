@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sidaqdeep singh Behal Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+<style>
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+.skill-mf .progress {
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #d94a4a;
+}
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+#typing-animation:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes typing-cursor {
+  from { width: 5px; }
+  to { width: 0; }
+}
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Sidaqdeep Singh Behal</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+	  <!-- HERO SECTION -->
+	  <section id="home-section" class="hero" style="background:url('images/bg_1.png') center/cover no-repeat; min-height:100vh; display:flex; align-items:center; position:relative;">
+		  <div class="overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.55);z-index:0;"></div>
+		  <div class="container" style="position:relative;z-index:1;">
+		    <div style="max-width:600px;">
+		    	<span style="color:#d94a4a; font-size:18px; font-weight:600; letter-spacing:2px;">Hello!</span>
+		    	<h1 style="color:#fff; font-size:48px; font-weight:800; margin:16px 0;">I'm <span style="color:#d94a4a;">Sidaqdeep Singh Behal</span></h1>
+		    	<span id="typing-animation" style="font-size:24px; font-weight:700; color:#fff;"></span>
+		    	<br><br>
+		    	<p style="margin-top:20px;">
+		    		<a href="https://www.linkedin.com/in/sidaqdeep-singh-behal-270630311" class="btn btn-primary py-3 px-4" style="margin-right:10px;">Linkedin</a>
+		    		<a href="https://github.com/Sidaqdeep" class="btn btn-outline-light py-3 px-4">Github</a>
+		    	</p>
+		    </div>
+
+
+			
+		  </div>
+
+		  <script>
+		  const typingAnimationElement = document.getElementById('typing-animation');
+		  const typingTexts = ['Mern Stack Developer', 'Technophile', 'Programmer'];
+		  function playTypingAnimation(text) {
+		  	for (let i = 0; i < text.length; i++) {
+		  		setTimeout(() => { typingAnimationElement.textContent += text[i]; }, i * 150);
+		  	}
+		  	setTimeout(() => {
+		  		typingAnimationElement.textContent = '';
+		  		playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+		  	}, text.length * 150 + 1000);
+		  }
+		  playTypingAnimation(typingTexts[0]);
+		  </script>
+	  </section>
+
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about-section" style="padding:80px 0; background:#000;">
+    	<div class="container">
+			<div class="row d-flex align-items-center">
+				<!-- Profile Image -->
+				<div class="col-md-4 text-center" style="margin-bottom:30px;">
+					<img src="images/about-me.png" class="img-fluid rounded" alt="Sidaqdeep" style="max-width:280px; ">
+				</div>
+				<!-- About Text -->
+				<div class="col-md-8" style="padding-left:40px;">
+					<!-- <h1 style="font-size:60px; color:#f0f0f0; font-weight:800; line-height:1; margin-bottom:-10px;">About</h1> -->
+					 
+					<h2 style="font-size:45px; font-weight:700; margin-bottom:20px;">About Me</h2>
+					<p style="color:#d7c1c1; line-height:1.9;">
+Full-Stack Developer skilled in designing and building scalable, secure web applications. 
+Strong expertise in backend architecture, authentication systems, API development, and performance optimization. 
+Experienced in integrating intelligent application features and modern web technologies. 
+Backed by a solid foundation in software engineering and core computer science concepts. 
+A collaborative team player and effective communicator, focused on creating impactful, user-centric digital solutions.
+					</p>
+					<ul style="list-style:none; padding:0; margin-top:20px;">
+						<li style="padding:6px 0; border-bottom:none"><strong>Profile:</strong> &nbsp; Full-Stack Development</li>
+						<li style="padding:6px 0; border-bottom:none"><strong>Education:</strong> &nbsp; Bachelor of Engineering</li>
+						<li style="padding:6px 0; border-bottom:none"><strong>Language:</strong> &nbsp; English, Hindi</li>
+						<li style="padding:6px 0;"><strong>Interest:</strong> &nbsp; Traveling, Gaming</li>
+					</ul>
+
+					<!-- 3 Buttons -->
+					<div style="display:flex; flex-wrap:wrap; gap:16px; margin-top:30px;">
+						<a href="images/Sidaqdeep Singh Behal Resume.pdf" download style="display:flex;align-items:center;gap:10px;border:2px solid #d94a4a;border-radius:10px;padding:12px 24px;color:#111;text-decoration:none;font-size:15px;font-weight:600;background:#fff;min-width:140px;justify-content:center;">
+							<span style="font-size:18px;">⬇</span> Resume
+						</a>
+						<a href="https://www.linkedin.com/in/sidaqdeep-singh-behal-270630311" target="_blank" style="display:flex;align-items:center;gap:10px;border:2px solid #d94a4a;border-radius:10px;padding:12px 24px;color:#111;text-decoration:none;font-size:15px;font-weight:600;background:#fff;min-width:140px;justify-content:center;">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0077b5" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.36h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v5.61z"/></svg>
+							Linkedin
+						</a>
+						<a href="https://leetcode.com/u/behalsidaqdeepsingh/" target="_blank" style="display:flex;align-items:center;gap:10px;border:2px solid #d94a4a;border-radius:10px;padding:12px 24px;color:#111;text-decoration:none;font-size:15px;font-weight:600;background:#fff;min-width:140px;justify-content:center;">
+							<span style="font-size:15px;font-weight:900;color:#d94a4a;">&lt;/&gt;</span> Leetcode
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+
+	
+  <!-- ===== SKILLS SECTION ===== -->
+<section id="skills-section" style="padding:80px 0; background:#000;">
+  <div class="container">
+    <div class="row justify-content-center" style="margin-bottom:40px;">
+      <div class="col-md-10 text-center">
+        <h2 style="font-size:60px; font-weight:700; color:#fff; line-height:1; margin-bottom:10px;">My Skills</h2>
+       
+      </div>
+    </div>
+    <div class="row justify-content-center" style="padding-bottom:60px;">
+      <div class="col-md-12">
+
+        <!-- ✅ All cards INSIDE this div -->
+        <div style="display:flex; flex-wrap:wrap; gap:16px; justify-content:center; max-width:530px; margin:0 auto;">
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40" height="40" alt="C"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">C</span>
+          </div>
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="40" height="40" alt="C++"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">C++</span>
+          </div>
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">JavaScript</span>
+          </div>
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">HTML5</span>
+          </div>
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40" alt="CSS3"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">CSS3</span>
+          </div>
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="40" height="40" alt="Tailwind"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">Tailwind</span>
+          </div>
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40" alt="React"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">React.js</span>
+          </div>
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" height="40" alt="NodeJS"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">Node.js</span>
+          </div>
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="40" height="40" alt="Express" style="filter:invert(1)"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">Express.js</span>
+          </div>
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="40" height="40" alt="MongoDB"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">MongoDB</span>
+          </div>
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" height="40" alt="MySQL"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">MySQL</span>
+          </div>
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" height="40" alt="Git"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">Git</span>
+          </div>
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40" height="40" alt="GitHub" style="filter:invert(1)"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">GitHub</span>
+          </div>
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" height="40" alt="VS Code"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">VS Code</span>
+          </div>
+
+          <div style="background:#8b0000; border-radius:12px; padding:16px 12px; text-align:center; width:90px;">
+            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="40" height="40" alt="Postman"/><br>
+            <span style="color:#fff; font-size:13px; margin-top:6px; display:block;">Postman</span>
+          </div>
+
+        </div> <!-- ✅ flex container closes here -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE SECTION ===== -->
+    <section id="experience-section" style="padding:80px 0; background:#000;">
+      <div class="container">
+        <div class="row justify-content-center" style="margin-bottom:50px;">
+          <div class="col-md-10 text-center">
+            <h2 style="font-size:60px; font-weight:700; color:#eeeeee; line-height:1; margin-bottom:10px;">Experience</h2>
+         
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <!-- Timeline card -->
+            <div style="position:relative; padding-left:30px; border-left:3px solid #d94a4a;">
+
+              <!-- Dot -->
+              <div style="width:14px; height:14px; background:#d94a4a; border-radius:50%; position:absolute; left:-8px; top:6px;"></div>
+
+              <!-- Date -->
+              <span style="color:#d94a4a; font-weight:600; font-size:14px; letter-spacing:1px;">July 2025 – August 2025</span>
+
+              <!-- Role -->
+              <h3 style="color:#fff; font-size:22px; font-weight:700; margin:10px 0 4px;">Web Developer Intern</h3>
+
+              <!-- Company -->
+              <p style="color:#aaa; font-size:16px; font-weight:600; margin-bottom:20px;">🏢 INFITS</p>
+
+              <!-- Points -->
+              <ul style="padding-left:20px; margin:0; color:#888; line-height:2.2;">
+                <li>Implemented secure user authentication using JWT-based login and role-based access control.</li>
+                <li>Applied rate limiting mechanisms on sensitive APIs to prevent brute-force attempts and excessive requests.</li>
+                <li>Collaborated with senior developers to debug issues, optimize backend performance, and follow best coding practices.</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://ai-powered-blog-app-silk.vercel.app/" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/Sidaqdeep/AI-powered-Blog-App">QuickBlog</a></h3>
+                <p>A full-stack blogging platform built using the MERN stack with integrated AI-powered blog content generation. The app supports admin-managed blog creation, AI-based content generation, ImageKit optimization, and full CRUD functionality.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Sidaqdeep/AI-Interview-Assistant" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://ai-interview-assistant-1-pbr0.onrender.com/">Prepify </a></h3>
+                <p>A smart, AI-powered interview preparation tool that generates mock interview questions, evaluates answers, gives detailed feedback, and even uses webcam + voice to simulate a real interview environment.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Sidaqdeep/Amazon-Clone" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/Sidaqdeep/Amazon-Clone">Amazon Clone</a></h3>
+                <p>Developed a responsive Amazon Clone using HTML, CSS, and JavaScript, 
+replicating core e-commerce functionalities like product listing, 
+add to cart, and checkout UI. Implemented modern UI design 
+and responsive layout for better user experience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	    <br>
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Sidaqdeep/Password-Generator" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://github.com/Sidaqdeep/Password-Generator">Password Generator</a></h3>
+				  <p>Developed a secure password generator with customizable options for length, character types, and complexity.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Sidaqdeep/Tic-Tac-Toe-Game" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://github.com/Sidaqdeep/Tic-Tac-Toe-Game">Tic Tac Toe Game</a></h3>
+				  <p>Developed a responsive Tic Tac Toe game using HTML, CSS, and JavaScript with an interactive UI and game state management.</p>
+				</div>
+			  </div>
+			</div>
+	</div>
+	  </div>
+</div> 
+</section>
+
+ <!-- ===== CONTACT SECTION ===== -->
+<section id="contact-section" style="padding:80px 0; background:#0a0a0a;">
+<style>
+#contact-section,#contact-section *{opacity:1!important;visibility:visible!important;}
+#contact-wrapper{display:flex!important;flex-wrap:wrap!important;gap:60px!important;align-items:flex-start!important;max-width:1100px!important;margin:0 auto!important;padding:0 30px!important;}
+#contact-left{flex:1!important;min-width:280px!important;}
+#contact-right{flex:1.5!important;min-width:300px!important;}
+#contact-right input,#contact-right textarea{
+width:100%!important;box-sizing:border-box!important;background:#1e1e1e!important;
+border:1px solid #444!important;border-radius:10px!important;padding:18px 20px!important;
+color:#fff!important;font-size:15px!important;margin-bottom:16px!important;}
+#contact-right input::placeholder,#contact-right textarea::placeholder{color:#888!important;}
+#contact-right input:focus,#contact-right textarea:focus{border-color:#d94a4a!important;}
+</style>
+
+<div id="contact-wrapper">
+
+<!-- LEFT -->
+<div id="contact-left">
+<h2 style="font-size:48px;font-weight:800;color:#fff;margin-bottom:30px;">Get in Touch</h2>
+
+<div style="margin-bottom:20px;">
+<span style="color:#ccc;">behalsidaqdeepsingh@gmail.com</span>
+</div>
+
+<a href="images/Sidaqdeep Singh Behal Resume.pdf"
+style="display:inline-flex;background:#d94a4a;color:#fff;padding:16px 28px;border-radius:8px;text-decoration:none;">
+Download Resume
+</a>
+</div>
+
+<!-- RIGHT FORM -->
+<div id="contact-right">
+
+<form id="contact-form">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Email Address" required>
+<textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+
+<div style="text-align:center;">
+<button type="submit"
+style="background:#d94a4a;color:#fff;border:none;padding:16px 48px;border-radius:8px;font-size:16px;cursor:pointer;">
+Send Message
+</button>
+</div>
+</form>
+
+</div>
+</div>
+</section>
+<!-- ===== CONTACT SECTION END ===== -->
+
+
+<footer style="background:#000;padding:24px 0;text-align:center;border-top:1px solid #1a1a1a;">
+<p style="color:#555;margin:0;font-size:14px;">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+</p>
+</footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- EMAILJS SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+
+emailjs.init("VKCeDhWDgGC6_z6Cq");
+
+const form=document.getElementById("contact-form");
+
+form.addEventListener("submit",function(e){
+e.preventDefault();
+
+emailjs.sendForm(
+"service_x5ceipi",
+"template_44jt0em",
+this
+).then(function(){
+alert("Message sent successfully ✅");
+form.reset();
+},function(error){
+alert("Failed to send ❌");
+console.log(error);
+});
+
+});
+});
+</script>
+
+</body>
+</html>
